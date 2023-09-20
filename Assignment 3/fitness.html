@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Daily</title>
+</head>
+<body>
+    <h1>Fitness Survey</h1>
+    <p><strong>Question 1</strong></p>
+    <div>
+        <label for="exercise">How often do you exercise :</label><br>
+        <input type="radio" id="daily" name="exercise" value="daily">
+        <label for="daily">Daily</label><br>
+        <input type="radio" id="weekly" name="exercise" value="weekly">
+        <label for="weekly">Weekly</label><br>
+        <input type="radio" id="monthly" name="exercise" value="monthly">
+        <label for="female">Monthly</label><br>
+        <input type="radio" id="rarely" name="exercise" value="rarely">
+        <label for="rarely">Rarely</label><br>
+    </div>
+    <p><strong>Question 2</strong></p>
+    <div>
+        <label for="exercisetype">What type of exercise do you prefer (Select one or more)</label><br>
+        <input type="checkbox" name="exercisetype1" id="exercisetype1" value="cardio">
+        <label for="exercisetype1">Cardio</label><br>
+        <input type="checkbox" name="exercisetype2" id="exercisetype2" value="strength training">
+        <label for="exercisetype2">Strength Training</label><br>
+        <input type="checkbox" name="exercisetype3" id="exercisetype3" value="yoga">
+        <label for="exercisetype3">Yoga</label><br>
+    </div>
+    <p><strong>Question 3</strong></p>
+    <div>
+        <label for="fitrange">On a scale from 1 to 10, how would you rate your overall fitness level?</label><br>
+        <input type="range input" id="fitrange" name="fitrange" min="1" max="10">
+    </div>
+    <p><strong>Question 4</strong></p>
+    <div>
+        <label for="motivation">What motivates your exercise (Select one or more)</label><br>
+        <select name="motivation" id="motivation" multiple>
+        <option value="health">Health</option>
+        <option value="weight">Weight Loss</option>
+        <option value="stress">Stress Relief</option>
+        <option value="competition">Competition</option>   
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="comment">Any additional comments or suggestions?:</label><br>
+        <textarea name="comment" id="comment" cols="30" rows="4"></textarea>
+    </div>
+    <input type="submit" value="submit">
+
+</body>
+</html>
