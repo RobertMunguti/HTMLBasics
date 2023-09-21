@@ -1,0 +1,20 @@
+/* Element-Selector  */
+h1{
+    font-size: 25px;
+}
+
+
+/* Class Selector */
+.highlight{
+    background-color: aqua;
+}
+
+/* Descendants Selector */
+ul li{
+    list-style: circle;
+}
+
+/* Pseudo-class Selector */
+a:hover{
+    text-decoration: underline;
+}

@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+            background-color: rgb(166, 214, 235);
+
+        }
+        p{
+            text-emphasis: red;
+        }
+    </style>
 </head>
 <body>
     <a href="main.html">Home</a>
@@ -51,23 +61,23 @@
 
             <!-- Registration Form Example -->
         <form action="signup.html">
-            <div> 
+            <div class="form-group"> 
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="email">Email</label>
                 <input type="text" id="email" name="email" required>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="phoneNumber">Phone Number</label>
                 <input type="text" id="phoneNumber" name="phoneNumber" required>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
             </div>
-            <div>
+            <div class="form-group">
                 <input type="checkbox" id="agree" name="agree" value="yes" required>
                 <label for="agree">I agree to the terms and Conditions</label>
             </div>
