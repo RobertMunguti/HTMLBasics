@@ -1,0 +1,53 @@
+/* Reset some default margin and padding for consistency */
+body, h1, h2, h3, p, ul, li, a{
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the entire page */
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header and navigation bar with Flexbox */
+header{
+    background-color: #336699;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #336699;
+}
+nav li{
+    margin: 0 20px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 10px;
+    
+}
+
+#itm1{
+    background-color: rgb(213, 213, 213);
+    padding: 20px;
+}
+
+#itm2{
+    background-color: white;
+    padding: 20px;
+}
+
+footer{
+    text-align: center;
+    background-color: #336699;
+    color: white;
+    padding: 10px 0;
+}

@@ -1,0 +1,54 @@
+/* Reset some default margin and padding for consistency */
+body, h1, h2, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a bacground color to the entire page */
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header{
+    background-color: #336699;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the main content section */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the main content area */
+#content{
+    flex: 2;
+    padding: 10px;
+}
+
+/* Style thr sidebar */
+#sidebar{
+    flex: 1;
+    background-color: #336699;
+    color: white;
+    padding: 10px;
+}
+
+/* Style the footer */
+footer{
+    text-align: center;
+    background-color: #336699;
+    color: white;
+    padding: 10px;
+}

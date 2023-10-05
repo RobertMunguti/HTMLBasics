@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+            background-color: rgb(166, 214, 235);
+
+        }
+        p{
+            text-emphasis: red;
+        }
+    </style>
+</head>
+<body>
+    <a href="main.html">Home</a>
+    <!-- Comments in HTML
+    What is a comment- A comment is a non executable statement in a code -->
+
+    <!-- Forms in HTML
+    A form is an element that allow a user to input data to be submitted 
+    to a web server for processing -->
+
+    <!--1. Text input (<input type="text">):
+         > Used for single-line text input.
+         > Commonly used for name,email or username feilds.
+
+        2. Password input (<input type="password">):
+         > Used for password input.
+         > Characters are usually masked (e.g., asterisks) for security
+
+        3. Radio Buttons (<input type="radio">):
+         > Used when users must select one option from multiple choices.
+         > Grouped by using the name attribute 
+        
+        4. Checkboxes (<input type="checkbox">):
+         > Used when users can select multiple options.
+
+        5. Dropdown List (<select>):
+         > Used for selecting options from a list.
+         > Contains <option> elements for each choice
+
+        6. Text Area (<textarea>):
+         > used for multi-line text input, such as comments or messages.
+
+        7. Form Element (<form>):
+         > The <form> element is used to create the container for all form-related elements.
+         > It defines where the data will be sent when the form is submitted (the "action"attribute )
+         and the HTTP method to use (Usually "GET" or "POST", specified by the "method" attribute).
+
+        8. Label (<label>):
+         > Lables provide a text description for form elements, improving accessibilitu and user experience.
+         > They are associated with their respective form elements using the "for"attribute.
+         
+        9. Buttons (<input type="submit"> or <button>):
+         > These elements are used to submit the form or trigger specific actions.
+         > Example (Submit Button)-->
+
+            <!-- Registration Form Example -->
+        <form action="signup.html">
+            <div class="form-group"> 
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="agree" name="agree" value="yes" required>
+                <label for="agree">I agree to the terms and Conditions</label>
+            </div>
+            <input type="submit" value="Signup">
+            
+        </form>
+</body>
+</html>

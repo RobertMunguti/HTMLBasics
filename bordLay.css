@@ -1,0 +1,36 @@
+/* Reset some default margin and padding for consistency */
+body, h1, h2, p{
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a bacground color to the entire page */
+body{
+    background-color: aqua;
+}
+
+/* Style the header */
+header{
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the main content section */
+main{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0 , 0.2);
+}
+
+/* Style the footer */
+footer{
+    text-align: center;
+    background-color: #336699;
+    color: white;
+    padding: 10px;
+}

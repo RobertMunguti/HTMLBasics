@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+<body>
+    
+    <h1>Contact us</h1>
+
+    <form action="sample.html" method="post">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="gender">Gender :</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="subscribe">Subscribe to our News Letter</label>
+            <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+        </div>
+        <div>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+            <option value="kenya">Kenya</option>
+            <option value="uganda">Uganda</option>
+            <option value="tanzania">Tanzania</option>
+            <option value="botswana">Botswana</option>
+            <option value="egypt">Egypt</option>    
+            </select>
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="30" rows="4"></textarea>
+        </div>
+        <input type="submit" value="submit">
+
+    </form>
+</body>
+</html>

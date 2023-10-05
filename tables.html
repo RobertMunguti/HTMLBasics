@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse; 
+            }
+
+        th,
+        td {
+        padding: 10px;
+            }
+            th {
+        text-align: left;
+        }
+        table#t03 {
+        width: 100%;
+        background-color: #f2f2d1;
+    }
+    table#t01 {
+        background-color: aqua;
+    }
+    table#t04{
+        border: 5;
+        border-color: black;
+    }
+    table#t05{
+        border: 5;
+        border-color: gray;
+    }
+
+        </style>
+</head>
+<body>
+    <!-- An HTML table is defined with the “table” tag. 
+        Each table row is defined with the “tr” tag. 
+        A table header is defined with the “th” tag. 
+        By default, table headings are bold and centered. 
+        A table data/cell is defined with the “td” tag. -->
+
+        <table style="width:50%" id="t01">
+            <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            </tr>
+        
+            <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>25</td>
+            </tr>
+            <tr>
+            <td>Jane</td>
+            <td>Doe</td>
+            <td>22</td>
+            </tr>
+            <tr>
+            <td>Hubert</td>
+            <td>Nobert</td>
+            <td>25</td>
+            </tr>
+        </table>  
+        <br> 
+        <!-- To make a cell span more than one column, we must use the colspan attribute. -->
+        <table>
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Home Phone/Office Phone</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>0712345678</td>
+                <td>0112255476</td>
+            </tr>
+        </table> 
+        <br>
+        <!-- A color can be added as a background in an HTML table using the “background-color” option. -->
+        <!-- To make a cell span more than one row, we must use the rowspan attribute. -->
+        <table id="t03">
+            <caption>Employee Details</caption>
+            <tr>
+                <th>Name:</th>
+                <td>John Doe</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Home/Office Telephone Number:</th>
+                <td>0712345678</td>
+            </tr>
+            <tr>
+                <td>0112233665</td>
+            </tr>
+        </table>
+        <!-- Nesting tables simply means making a Table inside another Table.  -->
+        <table id="t04">
+            <caption>Nested Tables</caption>
+            <tr>
+                <td>First Column of Outer Table</td>
+                <td>
+                    <table id="t05">
+                        <tr>
+                            <td>First row of Inner Table</td>
+                        </tr>
+                        <tr>
+                            <td>Second row of Inner Table</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+</body>
+</html>

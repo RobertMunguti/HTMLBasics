@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+    <!-- Flexbox -->
+
+    <!--Flexbox is a powerfull CSS layout model that simplifies the creation of flexible, responsive page
+        layouts. It allows you to distribute space and align content within a container, even when their
+        sizes are unknown or dynamic.
+        
+        Key concepts in Flexbox:
+
+        1: Flex Container:
+        ->: To create a flex layout, you designate a container as a "flex container" by applying display:
+        flex or display: inline-flex to it.
+        ->:The direct children of this container become "Flex items."
+
+        2: Main Axis and Cross Axis:
+        ->: In a flex container, there are two axes: tha main axis and the cross axis.
+        ->: The main axis is determined by the flex-direction property(row, row-reverse, column, column-reverse).
+        ->: The cross axis is perpendicular to the main axis.
+
+        3.Flex Items:
+        ->:Flex items are the children of the flex container.
+        ->: They can be horizontally or vertically aligned based on the main and cross axes.
+
+        4. Flex Properties
+        ->:flex-grow: Determines how much a flex item can grow in relation to other items.
+        ->:flex-shrink: Determines how mucch a flex item can shrink.
+        ->:flex-basis: specifies the ideal size of a flex item before the remaining space is distibuted.
+        ->:flex: A shorthand property that combines flex-grow, flex-shrink and flex-basis.
+        ->:order: Defines the order of a flex item in the sequence.
+     -->
+     <header>
+        <h1>Header</h1>
+     </header>
+
+     <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+     </nav>
+
+     <main>
+        <section id="intro">
+            <h2>Welcome to our Website</h2>
+            <p>This is the introduction section with some content.</p>
+        </section>
+        <section id="features">
+            <h2>Key Features</h2>
+            <div class="feature-box">
+                <h3>Responsive Design</h3>
+                <p>We provide a responsive web experience for all devices.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Modern UI</h3>
+                <p>Our website features a modern and intuituve user interface.</p>
+            </div>
+            <div class="feature-box">
+                <h3>High Performance</h3>
+                <p>We optimize our website for high performance and speed.</p>
+            </div>
+        </section>
+        <aside id="sidebar">
+            <h2>Recent Posts</h2>
+            <ul>
+                <li><a href="">Post 1 - Responsive Web Design</a></li>
+                <li><a href="">Post 2 - Css Flexbox</a></li>
+                <li><a href="">Post 3 - Web Performance</a></li>
+                <li><a href="">Post 4 - Modern UI Design</a></li>
+            </ul>
+        </aside>
+     </main>
+
+     <footer>
+        <p>&copy;2023 Your Company. All Rights Reserved.</p>
+     </footer>
+</body>
+</html>

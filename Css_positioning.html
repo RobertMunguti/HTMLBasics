@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Exploration</title>
+    <link rel="stylesheet" href="positioning.css">
+</head>
+<body>
+    <!-- Css Posiioning -->
+
+    <!-- CSS positioning is a crucial aspect of web design that allows you yo control the placement
+        of elements on a web page. There are several CSS properties for positioning, including float, position,
+        and display. Let's Explore each of them
+
+        1. Float
+        ->:The float property is used to move an element to the left or right, allowing content to flow
+        around it. It's often used for creating multi-column layouts or wrapping text around images.
+
+        ->:Elements with float applied are taken out of the normal document flow and moved to the left or right
+        until they encounter the edge of their containing element or another floated element.
+
+        ->:Common values for float are left and right.
+
+        ->:It's important to clear floats using the clear property on elements following the floated elements 
+        to prevent layout issues
+
+        2. Position
+        ->:The position property allows you to control the positioning of an element relative to its containing
+        element. it offers several value:
+            *static(Default): The element follows the normal flow of the document.
+            *relative: The element's position is relative to it's normal position.
+            *absolute: The element's position is relative to the nearest positioned ancestor.
+            *fixed: The element's position is relative to the viewport(stays in the same place even when scrolling).
+
+        3. Display
+        ->:The display property controls the rendering behavior of an element. It can change an elements display
+        from the default block or inline to other values like inline-block or none.
+
+        ->:Common values include:
+            *block: Elements are displayed as a block-level element, occupying the full width of their parent and
+            stacking vertically.
+            *inline: Elements are displayed as inline elements, stacking horizontally.
+            *inline-block: Elements are displayed as inline elements, but you can contol their width, height,
+            and margin.
+            *none: Elements are hidden, effectively removing them from the layout.
+            *flex and grid: Enable advanced layout options, such as creating flexible boxes and grid layouts.
+     -->
+
+
+     <!-- Example code below  -->
+
+     <head>
+        <h1>Header</h1>
+     </head>
+
+     <main>
+        <section id="float-example">
+            <h2>Float Example</h2>
+            <div class="float-left">
+                <p>Float Left</p>
+            </div>
+            <div class="float-right">
+                <p>Float Right</p>
+            </div>
+        </section>
+
+        <section id="position-example">
+            <h2>Positon Example</h2>
+            <div class="container">
+                <p>This is the container</p>
+                <div class="absolute-box">
+                    <p>Absolute Position</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="display-example">
+            <h2>Display Example</h2>
+            <div class="inline-block">
+                <p>Inline-Block Element</p>
+            </div>
+            <p>Regular Text</p>
+        </section>
+
+     </main>
+
+     <footer>
+        <p>Footer &copy;2023</p>
+     </footer>
+</body>
+</html>
