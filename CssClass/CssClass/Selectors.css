@@ -1,0 +1,44 @@
+/* Element Selector */
+p{
+    color: blue;
+}
+
+/* Class selector */
+.paragraph2{
+    color: chartreuse;
+}
+
+
+/* Id selector */
+#header{
+    text-size-adjust: 45px;
+}
+
+/* Descendant Selector */
+nav a{
+    text-decoration: underline;
+}
+
+/* Attribute Selector */
+
+[data-category="important"]{
+    color: red;
+    font-weight: bolder;
+}
+
+[data-category="normal"]{
+    color: greenyellow;
+}
+
+
+ /* Pseudo-Class Selector: */
+ a:hover{
+    color: red;
+}
+
+/* Pseudo-Element Selector: */
+.highlight::before{
+    content: "Important Notice: ";
+    font-weight: bold;
+    color: burlywood;
+}
