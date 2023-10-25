@@ -8,7 +8,7 @@ There are 8 basic datatypes in Javscript
 ->Primitive data types
     -Number  - Represents numeric values, both integers and floating-point numbers.
                 Example : let age =30;
-    -String  - Represents a sequence of characters, encolsed in single or double quotes.
+    -String  - Represents a sequence of characters, encolsed in double quotes.
                 example - let name ="John"
     -Boolean  - Represents a true or flase value
                 Example : let isStudent = true;
